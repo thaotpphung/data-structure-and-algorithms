@@ -42,6 +42,7 @@ class Solution {
         return new int[] { i, map.get(complement) };
       }
     }
+    throw new IllegalArgumentException("wrong");
   }
 }
 
@@ -54,7 +55,7 @@ class Solution {
  */
 
 // HashMap 1 pass
-class Solution {
+class Solution2 {
   public int[] twoSum(int[] nums, int target) {
       
       Map<Integer,Integer> map = new HashMap<>();

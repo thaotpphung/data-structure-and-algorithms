@@ -15,7 +15,7 @@ Output: [[-1,-1,2],[-1,0,1]]
  
 /*
 Approach: 
-use 2sum and sliding window
+use 2sum and 2 pointers
 */
 class Solution {
   public List<List<Integer>> threeSum(int[] nums) {
@@ -26,7 +26,7 @@ class Solution {
       for (int i = 0; i < nums.length - 2; i++) {
           if (i == 0 || (i > 0 && nums[i] != nums[i - 1]) ) {
               // target of 2 sum
-              // sliding window 
+              // 2 pointers
               int target = 0 - nums[i];
               int high = nums.length - 1;
               int low = i + 1;
